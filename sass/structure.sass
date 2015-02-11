@@ -1,0 +1,94 @@
+@import "bourbon"
+
+.header-container
+	background: $peter-river
+	border-bottom: 5px solid $wet-asphalt
+	color: #fff
+
+.footer-container
+	background: $peter-river
+	border-top: 5px solid $wet-asphalt
+	color: #fff
+	margin: 40px 0 0
+	padding: 10px
+
+.tablehead
+	@include align-items(stretch)
+	@include display(flex)
+	@include flex-direction(row)
+	@include justify-content(flex-start)
+	background: #3498db
+	color: #fff
+
+	div
+		@include flex(1)
+		font-weight: bold
+		padding: 2px 4px
+
+.tablelist
+	line-height: 28px
+	margin: 0
+	padding: 0
+
+	li
+		@include align-items(stretch)
+		@include display(flex)
+		@include flex-direction(row)
+		@include justify-content(flex-start)
+
+		div
+			@include flex(1)
+
+		input
+			background: none
+			max-width: 90%
+
+		div[title]
+			&:after
+				content: '*'
+
+		&:nth-child(even)
+			background: #ecf0f1
+
+
+
+form
+	section
+		margin: 0 0 40px
+
+		div
+			margin: 0 0 2px
+			padding: 0 4px
+
+			&:only-child:nth-child(even)
+				background: $clouds
+
+
+
+
+.personality
+	
+	label
+		display: inline-block
+		width: 150px
+
+	input
+	select
+
+
+.abilityscore
+
+	div
+		span
+			color: #aaa
+			display: inline-block
+			margin: 0 0 0 5px
+
+			&:before
+				content: '('
+
+			&:after
+				content: ')'
+
+.formButtons
+	padding: 10px

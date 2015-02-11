@@ -35,7 +35,14 @@ $silver: #BDC3C7
 $concrete: #95A5A6
 $asbestos: #7F8C8D
 
+// ------------------------------
+// Basics
+
+*
+	box-sizing: border-box
+
 html
+	text-rendering: optimizeLegibility
 	
 body
 	font-family: 'Roboto Slab', serif
@@ -49,9 +56,16 @@ a
 
 h1
 	margin: 0 0 10px
+	font-size: 2em
+	margin: 0
+	padding: 10px
 
 h2
-	margin: 0 0 10px
+	background: $wet-asphalt
+	color: #fff
+	font-size: 1.4em
+	margin: 0 0 4px
+	padding: 4px 8px
 
 h3
 	margin: 0 0 10px
@@ -63,3 +77,60 @@ section
 	padding: 10px
 
 p
+	margin: 0 0 10px
+
+
+// ------------------------------
+// Forms
+
+
+input
+	background: $clouds
+	border: 2px solid #ccc
+	border-radius: 5px
+	font-family: 'Roboto Slab', serif
+	font-size: 1em
+	line-height: 20px
+	padding: 2px 8px
+
+	&:hover
+		border-color: $carrot
+
+	&:focus
+		border-color: $pumpkin
+		outline: none
+
+
+input[type=button],
+input[type=submit]
+	background: $peter-river
+	border: 3px solid $wet-asphalt
+	color: #fff
+	cursor: pointer
+	font-size: 1.2em
+	font-weight: bold
+	line-height: 20px
+	padding: 10px 30px
+
+	&:hover
+		border-color: $carrot
+
+	&:focus
+		border-color: $pumpkin
+		outline: none
+
+select
+	background: $clouds
+	border: 2px solid #ccc
+	border-radius: 5px
+	font-family: 'Roboto Slab', serif
+	font-size: 1em
+	line-height: 20px
+
+	&:hover
+		border-color: $carrot
+
+	&:focus
+		border-color: $pumpkin
+		outline: none
+
